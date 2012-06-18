@@ -1,0 +1,8 @@
+[user]
+	name = Ian Brunton
+	email = wolfshift@gmail.com
+[github]
+	user = ibrunton
+	token = b6307e86b9440a3e91d3aa8be5330fb9
+[core]
+	excludesfile = /home/ian/.config/git_global_exclude

@@ -1,0 +1,27 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+#PS1='[\u@\h \W]\$ '
+PS1='\[\e[31m\]\W\[\e[36m\] \$\[\e[m\] '
+
+export PATH=$PATH:/home/ian/bin
+export EDITOR=vim
+export DIRB=$XDG_DATA_HOME/DirB
+
+# source all files in ~/.config/bash/
+for CFGFILE in ~/.config/bash/*; do
+  if [ -r ${CFGFILE} ]; then
+    source ${CFGFILE}
+  fi
+done
+
+
+
+shopt -s histappend
+export HISTCONTROL=ignoreboth		# no duplicates or empty lines
+export HISTIGNORE="&:ls:[bf]g:exit"	# do not store these lines
