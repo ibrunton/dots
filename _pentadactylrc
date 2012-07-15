@@ -1,0 +1,69 @@
+"1.0rc1
+
+loadplugins '\.(js|pent)$'
+group user
+command! gmail open https://mail.google.com/mail/?shva=1#inbox
+map -count -modes=n <C-t> <count><tab-open-homepage>
+set guioptions=bCrsn
+
+set passkeys+=mail.google.com:yjkux#<CR>,gi
+set passkeys+=google.com/reader:jkms<CR><Space>,gi
+set passkeys+=google.ca/reader:jkms<CR><Space>,gi
+
+hi TabIcon display:none
+set showtabline=multitab
+
+map -b s :toolbartoggle Navigation Toolbar<CR>
+
+set editor="evit"
+
+"colorscheme dwb
+" minimalistic tabs """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+style -name minitabs chrome://* <<EOM
+#TabsToolbar toolbarbutton {
+  display: none !important;
+}
+ 
+.tabbrowser-tabs {
+  background: #292929 !important;
+  height: 16px !important;
+}
+ 
+.tabbrowser-tab {
+  -moz-appearance: none !important;
+  -moz-border-radius: 0 !important;
+  background: #292929 !important;
+  border: none !important;
+  color: #8f8f8f !important;
+  font-family: Terminus;
+  font-size: 9pt !important;
+  height: 16px !important;
+  margin: 0 !important;
+  min-height: 0 !important;
+  padding: 0 0.5ex !important;
+}
+ 
+.tabbrowser-tab:not([pinned]) {
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+
+.tabbrowser-tab:not([fadein]) {
+  max-width: 1px !important;
+  min-width: 1px !important;
+}
+
+.tabbrowser-tab:hover {
+  /*background: #fad07a !important;*/
+  color: #9f9f9f !important;
+}
+ 
+.tabbrowser-tab[selected] {
+  /*background: #292929 !important;*/
+  background: #000000 !important;
+  color: #e0e0e0 !important;
+}
+EOM
+
+
+" vim: set ft=pentadactyl:

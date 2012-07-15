@@ -31,8 +31,9 @@ autocmd FileType c setlocal tabstop=4
 autocmd FileType cpp setlocal shiftwidth=4
 autocmd FileType cpp setlocal tabstop=4
 
+"autocmd FileType perl setlocal expandtab=4
 autocmd FileType perl setlocal shiftwidth=4
-autocmd FileType perl setlocal tabstop=4
+autocmd FileType perl setlocal softtabstop=4
 
 autocmd FileType make setlocal noexpandtab
 

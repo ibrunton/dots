@@ -44,8 +44,7 @@ URxvt.background: #000000
 *color7:  #dddddd
 *color16: #cccccc
 
-!urxvt.font: xft:Courier New:size=12
-!urxvt.font: xft:Terminus:size=12
+!urxvt.font: xft:Terminusmodx.icons:size=12
 URxvt.font: xft:Tamsyn:size=12
 !URxvt.font: xft:Ohsnap.icons:size=12
 !urxvt.font: xft:DejaVuSansMono:size=10
