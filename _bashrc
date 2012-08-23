@@ -14,7 +14,7 @@ export EDITOR=vim
 export DIRB=$XDG_DATA_HOME/DirB
 
 # source all files in ~/.config/bash/
-for CFGFILE in ~/.config/bash/*; do
+for CFGFILE in ~/Dropbox/config/bash/*; do
   if [ -r ${CFGFILE} ]; then
     source ${CFGFILE}
   fi
