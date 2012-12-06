@@ -1,3 +1,31 @@
-!Emacs.font: Courier New
-!Emacs.font: Terminus
+#include "/home/ian/Dropbox/config/dots/colours.muted"
+
 Emacs.font: Tamsyn
+
+URxvt.title: urxvt
+URxvt.borderColor: #000000
+URxvt.geometry: 100x30
+URxvt.internalBorder: 0
+URxvt.eXTernalBorder: 0
+URxvt.scrollBar_right: false
+URxvt.scrollBar: false
+URxvt.transparent: true
+URxvt.shading: 30
+URxvt.depth: 32
+!URxvt.background: rgba:0000/0000/0000/bbbb
+
+!URxvt.font: xft:Terminus:size=12
+URxvt.font: xft:Tamsyn:size=12
+
+URxvt.perl-ext: default,url-select
+URxvt.keysym.M-p: perl:url-select:select_next
+URxvt.url-select.launcher: firefox
+URxvt.url-select.button: 2
+URxvt.url-select.underline: true
+
+MAILTO*title: MAILTO
+EMACS*title: EMACS
+EMACS*geometry: 100x30
+RANGER*geometry:100x25
+CENTRED*geometry: 150x50
+CENTRED*shading: 50

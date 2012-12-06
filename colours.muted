@@ -1,0 +1,30 @@
+*background:	#000000
+*foreground:	#8eb1bd
+*cursorColor:	#546787
+
+!! terminal colors
+! black
+*color0: #192033
+*color8: #666666
+! red
+*color1: #a33434
+*color9: #f53838
+! green
+*color2: #566f3d
+*color10: #84ab5e
+! yellow
+*color3: #806939
+*color11: #bfae73
+! blue
+*color4: #355c9a
+*color12: #45a3e6
+! magenta
+*color5: #835f9f
+*color13: #ad73bf
+! cyan
+*color6: #5f9f9f
+*color14: #adeaea
+! white
+*color7: #888888
+*color15: #e8e8d3
+

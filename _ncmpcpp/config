@@ -1,76 +1,58 @@
-# ncmpcpp config (~/.ncmpcpp/config)
-# Ian Brunton <iandbrunton@gmail.com>
-# copied 2011-05-08 from:
-# mu @ freenode
-# 0xbyte@gmail.com
+####################################################
+## this is example configuration file, copy it to ##
+## ~/.ncmpcpp/config and set up your preferences  ##
+####################################################
 
-# General
-
+##### connection settings #####
 mpd_host = "localhost"
 mpd_port = "6600"
-mpd_music_dir = "/home/ian/music"
+mpd_music_dir = "~/music"
 
-playlist_disable_highlight_delay = "3"
-message_delay_time = "4"
+##### song format #####
+song_list_format = "{$5%a $9}{$2%t$9}|{$7%f$9}$7$R{%b }{$3%4l$9}$9"
+song_status_format = "$1{{$5%a$9{ $7%b$9{ $2%t$9}} }{($4%y$9)}}|{$7%f$9}$9"
+song_library_format = "{$3%n $9}{$2%t$9}|{$7%f$9}"
+tag_editor_album_format = "{%y }$7%b$9"
 
-# Formatting
+song_window_title_format = "{%a - }{%t}{ (%b)}|{%f} {[%l]}"
 
-song_list_format = "{%a - }{%t}$R{(%l)}"
-song_library_format = "{%n - }{%t}|{%f}"
-tag_editor_album_format = "{%y }%b"
-browser_playlist_prefix = "$2playlist$9 "
-selected_item_prefix = "$1"
-selected_item_suffix = "$9"
-now_playing_prefix = "$b"
-now_playing_suffix = "$/b"
+##### columns settings #####
+song_columns_list_format = "(30)[blue]{a} (40)[red]{t|f} (30)[cyan]{br} (4f)[green]{lr}"
 
-# colors are not supported for below veriables
-song_status_format = "%t{ by %a}{ from %b}{ (%y)}"
-song_window_title_format = "{%a - }{%t}|{%f}"
-song_columns_list_format = "(7)[cyan]{l} (28)[cyan]{a} (28)[]{b} (50)[cyan]{t}"
-
-# The following display modes take either "classic" or "columns"
-# Columns mode is declared above, in song_columns_list_format
+##### various settings #####
+#progressbar_look = "━⊙"
+progressbar_look = "─⊙╶"
 playlist_display_mode = "classic"
 browser_display_mode = "columns"
 search_engine_display_mode = "classic"
 
 
-# Colors
-colors_enabled = "yes"
-main_window_color = "cyan"
-main_window_highlight_color = "cyan"
-header_window_color = "cyan"
-volume_color = "cyan"
-progressbar_color = "cyan"
-statusbar_color = "cyan"
-color1 = "cyan"
-color2 = "cyan"
-active_column_color = "cyan"
-active_window_border = "blue"
-
-# Configuration
-
 header_visibility = "yes"
-statusbar_visibility = "yes"
-header_text_scrolling = "yes"
-
-fancy_scrolling = "no"
-cyclic_scrolling = "yes"
-
-allow_physical_files_deletion = "no"
-allow_physical_directories_deletion = "no"
-ignore_leading_the = "no"
-block_search_constraints_change_if_items_found = "yes"
-mouse_support = "yes"
-enable_window_title = "yes"
-
-lyrics_database = "1"
-external_editor = "vim"
-use_console_editor = "yes"
-
-default_space_mode = "add"
-display_screens_numbers_on_start = "no"
-clock_display_seconds = "yes"
+titles_visibility = "yes"
 
 ask_before_clearing_main_playlist = "yes"
+ignore_leading_the = "yes"
+mouse_support = "no"
+
+external_editor    = "vim"
+use_console_editor = "yes"
+
+##### colors definitions #####
+header_window_color            = "cyan"
+main_window_color              = "white"
+
+volume_color                   = "yellow"
+state_line_color               = "black"
+state_flags_color              = "blue"
+
+progressbar_color              = "black"
+statusbar_color                = "green"
+
+#alternative_ui_separator_color = "black"
+main_window_highlight_color    = "blue"
+active_column_color            = "green"
+window_border_color            = "blue"
+
+Offline
+
+

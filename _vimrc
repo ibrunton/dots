@@ -1,6 +1,6 @@
+" .vimrc file for Ian D Brunton
+
 set bg=dark
-"let g:solarized_termtrans=1
-"colorscheme solarized
 set number
 set showmode
 set ruler
@@ -10,14 +10,13 @@ set directory=/tmp
 " Status Line
 set laststatus=2
 set statusline=\ %f\ %m\ %r\ %y%=L:\ %l/%L,%c%V\ \ \ %p%%\ %P\ 
-highlight statusline cterm=bold ctermfg=Green ctermbg=Black
+highlight statusline cterm=bold ctermfg=Green ctermbg=none
 
 " put plugins in discrete subdirectories:
 call pathogen#infect()
 
 set nofoldenable
 
-"highlight Comment ctermfg=LightBlue
 filetype plugin indent on
 set noexpandtab
 set copyindent
@@ -57,3 +56,9 @@ autocmd FileType tex setlocal tabstop=4
 autocmd FileType tex setlocal tw=79
 
 autocmd FileType mkd setlocal tw=79
+
+" Keymaps
+nmap <F11> a<C-R>=strftime("%Y-%m-%d %a")<CR><Esc>
+nmap <F12> a<C-R>=strftime("%H:%M")<CR><Esc>
+imap <F11> a<C-R>=strftime("%Y-%m-%d %a")<CR><Esc>
+imap <F12> a<C-R>=strftime("%H:%M")<CR><Esc>

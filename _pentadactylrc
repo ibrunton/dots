@@ -14,6 +14,7 @@ hi TabIcon display:none
 set showtabline=multitab
 
 map -b s :toolbartoggle Navigation Toolbar<CR>
+map -b b :toolbartoggle Add-on Bar<CR>
 map -builtin <F3> :styletoggle<Space>-name<Space>jellybeans<CR>
 
 set editor="evit"
