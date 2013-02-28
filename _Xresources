@@ -1,17 +1,26 @@
-#include "/home/ian/Dropbox/config/dots/colours.muted"
+#include "/home/ian/Dropbox/config/dots/colours.hybrid"
 
-Emacs.font: Tamsyn
+emacs.font: Tamsyn
+!emacs.verticalScrollBars: off
+!emacs.menuBar: off
+!emacs.geometry: 100x30
+!emacs.background: t_background
+!emacs.foreground: t_foreground
+!emacs.modeline*attributeBackground:
+!emacs.modeline*attributeForeground:
 
 URxvt.title: urxvt
-URxvt.borderColor: #000000
+!URxvt.borderColor: #000000
+URxvt.borderColor: #1d1f21
 URxvt.geometry: 100x30
 URxvt.internalBorder: 0
 URxvt.eXTernalBorder: 0
 URxvt.scrollBar_right: false
 URxvt.scrollBar: false
 URxvt.transparent: true
-URxvt.shading: 30
-URxvt.depth: 32
+URxvt.shading: 20
+!URxvt.depth: 32
+!URxvt.blurRadius: 8
 !URxvt.background: rgba:0000/0000/0000/bbbb
 
 !URxvt.font: xft:Terminus:size=12

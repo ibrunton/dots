@@ -7,10 +7,13 @@ set ruler
 syntax on
 set directory=/tmp
 
+let g:hybrid_use_Xresources = 1
+colorscheme hybrid
+
 " Status Line
 set laststatus=2
 set statusline=\ %f\ %m\ %r\ %y%=L:\ %l/%L,%c%V\ \ \ %p%%\ %P\ 
-highlight statusline cterm=bold ctermfg=Green ctermbg=none
+highlight statusline cterm=bold ctermfg=Blue ctermbg=Black
 
 " put plugins in discrete subdirectories:
 call pathogen#infect()
@@ -47,6 +50,10 @@ autocmd FileType lua setlocal shiftwidth=4
 autocmd FileType lua setlocal tabstop=4
 
 autocmd FileType html setlocal shiftwidth=2
+autocmd FileType html setlocal softtabstop=2
+
+
+autocmd FileType html setlocal shiftwidth=2
 autocmd FileType html setlocal tabstop=2
 
 set grepprg=grep\ -nH\ $*
@@ -62,3 +69,9 @@ nmap <F11> a<C-R>=strftime("%Y-%m-%d %a")<CR><Esc>
 nmap <F12> a<C-R>=strftime("%H:%M")<CR><Esc>
 imap <F11> a<C-R>=strftime("%Y-%m-%d %a")<CR><Esc>
 imap <F12> a<C-R>=strftime("%H:%M")<CR><Esc>
+
+map <F8> : call CompileGcc()<CR>
+func! CompileGcc()
+	exec "w!"
+	exec "make"
+endfunc
