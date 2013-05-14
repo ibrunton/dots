@@ -26,15 +26,20 @@ URxvt.shading: 20
 !URxvt.font: xft:Terminus:size=12
 URxvt.font: xft:Tamsyn:size=12
 
-URxvt.perl-ext: default,url-select
+URxvt.perl-lib: /home/ian/.urxvt
+URxvt.perl-ext: default,url-select,cwd-spawn
 URxvt.keysym.M-p: perl:url-select:select_next
+URxvt.keysym.M-o: perl:cwd-spawn
 URxvt.url-select.launcher: firefox
 URxvt.url-select.button: 2
 URxvt.url-select.underline: true
 
-MAILTO*title: MAILTO
+CENTRED*geometry: 150x50
 EMACS*title: EMACS
 EMACS*geometry: 100x30
+MAIL*title: MAILTO
+MAIL*geometry: 120x30
+MUSIC*title: MUSIC
+MUSIC*geometry: 120x15
 RANGER*geometry:100x25
-CENTRED*geometry: 150x50
-CENTRED*shading: 50
+!CENTRED*shading: 50

@@ -6,9 +6,14 @@ command! gmail open https://mail.google.com/mail/?shva=1#inbox
 map -count -modes=n <C-t> <count><tab-open-homepage>
 set guioptions=bCrsn
 
+"command sfx
+"command sfxx
+"command sfp
+
 set passkeys+=mail.google.com:yjkux#<CR>,gi
 set passkeys+=google.com/reader:jkms<CR><Space>,gi
 set passkeys+=google.ca/reader:jkms<CR><Space>,gi
+set passkeys+=feedly.com:jkovnpmxs
 
 hi TabIcon display:none
 set showtabline=multitab

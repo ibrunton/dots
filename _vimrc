@@ -49,12 +49,17 @@ autocmd FileType python setlocal tw=79
 autocmd FileType lua setlocal shiftwidth=4
 autocmd FileType lua setlocal tabstop=4
 
+autocmd FileType haskell setlocal expandtab
+autocmd FileType haskell setlocal shiftwidth=8
+
 autocmd FileType html setlocal shiftwidth=2
 autocmd FileType html setlocal softtabstop=2
 
+autocmd FileType xml setlocal shiftwidth=2
+autocmd FileType xml setlocal softtabstop=2
 
-autocmd FileType html setlocal shiftwidth=2
-autocmd FileType html setlocal tabstop=2
+autocmd FileType javascript setlocal shiftwidth=4
+autocmd FileType javascript setlocal tabstop=4
 
 set grepprg=grep\ -nH\ $*
 let g:tex_flavour = "latex"
