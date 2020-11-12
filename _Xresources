@@ -1,45 +1,30 @@
-#include "/home/ian/Dropbox/config/dots/colours.hybrid"
+#include "/home/ian/Dropbox/config/dots/colours.polo"
 
-emacs.font: Tamsyn
-!emacs.verticalScrollBars: off
-!emacs.menuBar: off
-!emacs.geometry: 100x30
-!emacs.background: t_background
-!emacs.foreground: t_foreground
-!emacs.modeline*attributeBackground:
-!emacs.modeline*attributeForeground:
-
-URxvt.title: urxvt
-!URxvt.borderColor: #000000
 URxvt.borderColor: #1d1f21
-URxvt.geometry: 100x30
-URxvt.internalBorder: 0
-URxvt.eXTernalBorder: 0
+URxvt.geometry: 103x31
 URxvt.scrollBar_right: false
 URxvt.scrollBar: false
-URxvt.transparent: true
-URxvt.shading: 20
-!URxvt.depth: 32
-!URxvt.blurRadius: 8
-!URxvt.background: rgba:0000/0000/0000/bbbb
+URxvt*.transparent: true
+URxvt*.shading: 20
 
-!URxvt.font: xft:Terminus:size=12
-URxvt.font: xft:Tamsyn:size=12
+URxvt.font: xft:Terminus:size=12,xft:Tamsyn:size=12
 
-URxvt.perl-lib: /home/ian/.urxvt
-URxvt.perl-ext: default,url-select,cwd-spawn
+URxvt.perl-ext: default,keyboard-select,url-select
 URxvt.keysym.M-p: perl:url-select:select_next
-URxvt.keysym.M-o: perl:cwd-spawn
-URxvt.url-select.launcher: firefox
-URxvt.url-select.button: 2
+URxvt.keyboard-select.launcher: palemoon
+URxvt.keyboard-select.button: 2
+URxvt.keyboard-select.underline: true
+URxvt.url-select.launcher: palemoon
 URxvt.url-select.underline: true
 
 CENTRED*geometry: 150x50
 EMACS*title: EMACS
-EMACS*geometry: 100x30
+EMACS*geometry: 103x31
 MAIL*title: MAILTO
 MAIL*geometry: 120x30
 MUSIC*title: MUSIC
-MUSIC*geometry: 120x15
+MUSIC*geometry: 105x16
 RANGER*geometry:100x25
-!CENTRED*shading: 50
+ROOT*title: --ROOT--
+WEECHAT*geometry: 120x25
+SCRATCH*font: xft:ohsnap.icons:size=12

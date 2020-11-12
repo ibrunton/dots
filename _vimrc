@@ -1,14 +1,24 @@
 " .vimrc file for Ian D Brunton
 
+set tw=0
 set bg=dark
 set number
 set showmode
+set showcmd
 set ruler
 syntax on
 set directory=/tmp
+set nobackup
+set nohlsearch
+set viminfo='0,<50,s10,h
+"set digraph
 
 let g:hybrid_use_Xresources = 1
 colorscheme hybrid
+
+set spelllang=en_gb
+set dictionary+=/usr/share/dict/words
+set spellfile=$HOME/Dropbox/config/vim/spell/en.utf-8.add
 
 " Status Line
 set laststatus=2
@@ -66,8 +76,14 @@ let g:tex_flavour = "latex"
 autocmd FileType tex setlocal shiftwidth=4
 autocmd FileType tex setlocal tabstop=4
 autocmd FileType tex setlocal tw=79
+autocmd FileType tex setlocal spell
 
 autocmd FileType mkd setlocal tw=79
+
+autocmd FileType pov setlocal shiftwidth=4
+autocmd FileType pov setlocal tabstop=4
+
+"autocmd BufRead *.markdown,*tex call DistractFree#DistractFreeToggle() | wincmd w
 
 " Keymaps
 nmap <F11> a<C-R>=strftime("%Y-%m-%d %a")<CR><Esc>
